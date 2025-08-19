@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	position: relative;
+
+	justify-content: flex-start;
+	color: white;
+	padding: 1.5em;
+	background-color: black;
+	min-height: 100dvh;
+}
+
+main {
+	max-width: 720px;
+	margin: 0 auto;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	position: absolute;
+	top: 50%;
+	left: 1.5em;
+
+	padding: 1em;
+	max-width: 300px;
+	border-radius: 8px;
+
+	transform: translateY(-50%);
+}
+
+aside .avatar {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	contain: content;
+	aspect-ratio: 1 / 1;
+}
+
+.avatar img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+
+aside p {
+	margin-top: 0.5em;
+	text-align: center;
+}
+
+h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+h2 {
+	margin-top: 1.5rem;
+	font-size: 1.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.activities h2 {
+	font-size: 32px;
+}
+
+footer {
+	position: absolute;
+	bottom: 1em;
+}
+
+.activities {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}
+
+.activities ul {
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+	list-style: none;
+	padding-left: 0;
+}
+
+.activities li {
+	background-color: #000;
+	padding: 2em;
+	border-radius: 8px;
+	transition: all 0.4s ease;
+	font-size: 24px;
+}
+
+.activities li h4 {
+	font-size: 21px;
+	color: rgb(60, 70, 255);
+}
+
+.activities li:hover {
+	outline: 2px solid white;
+	scale: 1.05;
+	cursor: pointer;
+}
+
+.activities a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}

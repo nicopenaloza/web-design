@@ -17,7 +17,6 @@ body {
 	width: 100%;
 
 	background-color: black;
-	/* background: linear-gradient(to bottom, rgb(13, 41, 167), rgb(20, 20, 20)) no-repeat center center / cover; */
 	color: rgb(233, 233, 233);
 	min-width: 312px;
 }
@@ -97,7 +96,7 @@ body {
 	object-position: center;
 }
 
-.subtitle {
+.section-title {
 	font-size: 2.5em;
 	font-weight: bolder;
 	padding-top: .25em;
@@ -106,6 +105,10 @@ body {
 
 section {
 	padding: 1.5em;
+}
+
+#photos img {
+	width: 100%;
 }
 
 .characters {
@@ -172,4 +175,9 @@ section {
 
 .footer-text {
 	font-size: 0.9em;
+}
+
+.video {
+	width: 100%;
+	aspect-ratio: 16/9;
 }
