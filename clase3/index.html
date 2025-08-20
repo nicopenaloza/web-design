@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="FanPage de Brookling 99: información sobre la serie, personajes principales y curiosidades. Se pueden incluir metadescripciones en los resultados de la búsqueda para resumir el contenido de la página. Obtén más información sobre la metadescripción."
+    />
+
+    <title>Brookling 99 - Inicio</title>
+
+    <link rel="stylesheet" href="./src/assets/styles/index.css" />
+  </head>
+  <body>
+    <div id="menu" class="menu">
+      <div id="menu-button" class="menu-button" onclick="toggleMenu()">
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+        <span class="menu-bar"></span>
+      </div>
+      <ul id="menu-items" class="menu-items">
+        <li class="menu-item"><a href="#">Inicio</a></li>
+        <li class="menu-item"><a href="#introduction">Introducción</a></li>
+        <li class="menu-item"><a href="./characters.html">Personajes</a></li>
+        <li class="menu-item"><a href="./photos.html">Fotos</a></li>
+      </ul>
+    </div>
+    <nav class="navbar">
+      <ul class="navbar-items">
+        <li class="navbar-item"><a href="#">Inicio</a></li>
+        <li class="navbar-item"><a href="#introduction">Introducción</a></li>
+        <li class="navbar-item"><a href="./characters.html">Personajes</a></li>
+        <li class="navbar-item"><a href="./photos.html">Fotos</a></li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="banner">
+        <img src="src/assets/imgs/banner4.webp" alt="Banner de Brookling 99" />
+      </div>
+    </header>
+    <main class="container">
+      <section id="introduction">
+        <h1 class="title">Brookling 99</h1>
+        <p class="description">
+          Brookling 99 es una comedia de situación estadounidense creada por Dan
+          Goor y Michael Schur. La serie sigue las aventuras del equipo de
+          detectives de la comisaría 99 de Brooklyn, Nueva York, mientras
+          resuelven crímenes y navegan por sus relaciones personales y
+          profesionales. Con un elenco diverso y talentoso, la serie combina
+          humor, dramas y momentos conmovedores, convirtiéndose en un clásico de
+          la televisión moderna.
+        </p>
+      </section>
+      <section id="me">
+        <div class="avatar">
+          <img
+            src="src/assets/imgs/custom_me_web_design_class.png"
+            name="me"
+            alt="Dentro de la serie"
+          />
+        </div>
+        <label for="me">Autor como si fuera un personaje de la serie</label>
+      </section>
+      <section id="trailer">
+        <h2 class="title">Trailer</h2>
+        <iframe
+          class="video"
+          src="https://www.youtube.com/embed/icTOP9F17pU?si=VVh1ktu97Mq5Fn_x"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer-text">Nicolas Ariel Peñaloza | 2C - 2025</p>
+    </footer>
+  </body>
+
+  <script src="/clase3/src/js/index.js"></script>
+</html>
