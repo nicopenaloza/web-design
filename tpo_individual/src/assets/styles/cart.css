@@ -1,0 +1,251 @@
+h1 {
+	padding-bottom: 1em;
+}
+
+.cart-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 1rem;
+}
+
+.cart-table th,
+.cart-table td {
+	padding: 0.75rem;
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+}
+
+.cart-item-quantity {
+	width: 60px;
+	text-align: center;
+}
+
+.cart-layout {
+	display: grid;
+	grid-template-columns: 1fr minmax(260px, 360px);
+	gap: 24px;
+	align-items: start;
+}
+
+.cart-list {
+	min-width: 0;
+	height: 100%;
+}
+
+.cart-summary-card {
+	position: sticky;
+	top: 96px;
+	height: fit-content;
+	margin-top: 8px;
+	padding: 1rem 1.25rem;
+	border: 1px solid #e5e7eb;
+	border-radius: 12px;
+	background: #fff;
+	max-width: 360px;
+}
+
+.cart-summary-card h3 {
+	margin: 0 0 0.75rem 0;
+	font-size: 1.125rem;
+}
+
+.summary-row {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 0;
+	border-top: 1px dashed #eee;
+}
+
+.summary-row:first-of-type {
+	border-top: 0;
+}
+
+.summary-note {
+	margin: 0.75rem 0 1rem;
+	font-size: 0.9rem;
+	color: #666;
+}
+
+#no-items-cart-message {
+	flex: 1;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	height: 100%;
+	gap: 1em;
+	padding-bottom: 2em;
+}
+
+.cart-cards {
+	display: grid;
+	gap: 14px;
+	margin-top: 12px;
+}
+
+.cart-card {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-areas:
+		"title title"
+		"price price"
+		"qty qty"
+		"total actions";
+	gap: 10px 12px;
+	padding: 14px 16px;
+	border-radius: 14px;
+	background: #fff;
+	border: 1px solid #eee;
+	box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+	transition: box-shadow 0.2s ease, transform 0.12s ease;
+}
+
+.cart-card:hover {
+	box-shadow: 0 6px 22px rgba(0, 0, 0, 0.08);
+	transform: translateY(-1px);
+}
+
+.cart-card-title {
+	grid-area: title;
+	font-size: 1rem;
+	font-weight: 700;
+	line-height: 1.35;
+	color: #111;
+	word-break: break-word;
+}
+
+.cart-card-price {
+	grid-area: price;
+}
+
+.cart-card-qty {
+	grid-area: qty;
+}
+
+.cart-card-total {
+	grid-area: total;
+}
+
+.cart-card-actions {
+	grid-area: actions;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.cart-card-label {
+	font-size: 0.9rem;
+	color: var(--secondary);
+	min-width: 120px;
+}
+
+.cart-card-value {
+	font-size: 1rem;
+	font-weight: 700;
+	color: #111;
+}
+
+.cart-card-price .cart-card-value,
+.cart-card-total .cart-card-value {
+	letter-spacing: 0.2px;
+}
+
+.cart-item-quantity {
+	width: 96px;
+	padding: 8px 10px;
+	border-radius: 10px;
+	border: 1px solid #ddd;
+	outline: none;
+	font-weight: 600;
+	text-align: center;
+	transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.cart-item-quantity:focus {
+	border-color: var(--primary);
+	box-shadow: 0 0 0 3px rgba(240, 50, 11, 0.15);
+}
+
+.cart-item-quantity::-webkit-outer-spin-button,
+.cart-item-quantity::-webkit-inner-spin-button {
+	display: none;
+	margin: 0;
+}
+
+.cart-card-actions .primary-button {
+	padding: 0.6em 1.1em;
+	border-radius: 10px;
+	font-weight: 700;
+}
+
+.cart-card-price,
+.cart-card-qty,
+.cart-card-total {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.cart-card-total .cart-card-label {
+	color: #000;
+	font-weight: 600;
+}
+
+.cart-card-total .cart-card-value {
+	font-size: 1.05rem;
+	font-weight: 800;
+}
+
+.cart-card-price,
+.cart-card-qty {
+	padding-bottom: 6px;
+	border-bottom: 1px dashed #eee;
+}
+
+@media (min-width: 600px) {
+	.cart-card {
+		grid-template-columns: 1fr auto;
+		grid-template-areas:
+			"title actions"
+			"price price"
+			"qty qty"
+			"total total";
+		padding: 16px 18px;
+	}
+
+	.cart-card-actions {
+		align-self: start;
+	}
+}
+
+@media (min-width: 768px) {
+	.cart-table {
+		display: table;
+	}
+	.cart-cards {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.cart-table {
+		display: none;
+	}
+	.cart-cards {
+		display: grid;
+	}
+}
+
+@media (max-width: 900px) {
+	.cart-layout {
+		grid-template-columns: 1fr;
+	}
+	.cart-summary-card {
+		position: static;
+		max-width: none;
+	}
+}
