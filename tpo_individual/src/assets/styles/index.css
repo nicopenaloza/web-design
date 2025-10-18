@@ -177,7 +177,7 @@ footer {
 .menu .menu-items {
 	display: flex;
 	flex-direction: column;
-	gap: 4em;
+	gap: 1em;
 	margin-top: 0.55em;
 	text-decoration: none;
 	list-style: none;

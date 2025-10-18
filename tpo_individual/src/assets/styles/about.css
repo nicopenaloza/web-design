@@ -1,0 +1,27 @@
+.about-container {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 2rem 1rem;
+	line-height: 1.6;
+}
+
+.about-container h1,
+.about-container h2 {
+	margin-bottom: 0.5rem;
+	color: #111;
+}
+
+.about-container p {
+	color: #444;
+	margin-bottom: 1rem;
+}
+
+.about-container ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 2rem;
+}
+
+.about-container li {
+	margin: 0.3rem 0;
+}

@@ -2,58 +2,29 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>HardTech</title>
 
-		<link
-			rel="stylesheet"
-			href="./src/assets/styles/index.css"
-		/>
-		<link
-			rel="stylesheet"
-			href="./src/assets/styles/cart.css"
-		/>
+		<link rel="stylesheet" href="./src/assets/styles/index.css" />
+		<link rel="stylesheet" href="./src/assets/styles/about.css" />
 	</head>
 	<body>
-		<div
-			id="menu"
-			class="menu"
-		>
-			<div
-				id="menu-button"
-				class="menu-button"
-			>
+		<div id="menu" class="menu">
+			<div id="menu-button" class="menu-button">
 				<span class="menu-bar"></span>
 				<span class="menu-bar"></span>
 				<span class="menu-bar"></span>
 			</div>
-			<ul
-				id="menu-items"
-				class="menu-items"
-			>
-				<a href="./index.html">
-					<li class="clickable navbar-item">Inicio</li>
-				</a>
-				<a href="./offers.html">
-					<li class="clickable navbar-item">Ofertas</li>
-				</a>
-				<a href="./catalog.html">
-					<li class="clickable navbar-item">Catalogo</li>
-				</a>
-				<a href="./faq.html">
-					<li class="clickable navbar-item">FAQ</li>
-				</a>
-				<a href="./about.html">
+			<ul id="menu-items" class="menu-items">
+				<a href="./index.html"><li class="clickable navbar-item">Inicio</li></a>
+				<a href="./offers.html"><li class="clickable navbar-item">Ofertas</li></a>
+				<a href="./catalog.html"><li class="clickable navbar-item">Catalogo</li></a>
+				<a href="./faq.html"><li class="clickable navbar-item">FAQ</li></a>
+				<a href="#">
 					<li class="clickable navbar-item">Sobre Nosotros</li>
 				</a>
-				<a href="#">
-					<li
-						class="clickable navbar-item"
-						id="nav-cart-button"
-					>
+				<a href="./cart.html">
+					<li class="clickable navbar-item" id="nav-cart-button">
 						<svg
 							width="20"
 							height="19"
@@ -77,26 +48,13 @@
 		<nav class="navbar">
 			<h2 class="navbar-title">HardTech</h2>
 			<ul class="navbar-items">
-				<a href="./index.html">
-					<li class="clickable navbar-item">Inicio</li>
-				</a>
-				<a href="./offers.html">
-					<li class="clickable navbar-item">Ofertas</li>
-				</a>
-				<a href="./catalog.html">
-					<li class="clickable navbar-item">Catalogo</li>
-				</a>
-				<a href="./faq.html">
-					<li class="clickable navbar-item">FAQ</li>
-				</a>
-				<a href="./about.html">
-					<li class="clickable navbar-item">Sobre Nosotros</li>
-				</a>
-				<a href="#">
-					<li
-						class="clickable navbar-item"
-						id="nav-cart-button"
-					>
+				<a href="./index.html"><li class="clickable navbar-item">Inicio</li></a>
+				<a href="./offers.html"><li class="clickable navbar-item">Ofertas</li></a>
+				<a href="./catalog.html"><li class="clickable navbar-item">Catalogo</li></a>
+				<a href="./faq.html"><li class="clickable navbar-item">FAQ</li></a>
+				<a href="#"><li class="clickable navbar-item">Sobre Nosotros</li></a>
+				<a href="./cart.html">
+					<li class="clickable navbar-item" id="nav-cart-button">
 						<svg
 							width="20"
 							height="19"
@@ -111,10 +69,7 @@
 								fill="black"
 							/>
 						</svg>
-						<div
-							id="nav-cart-bubble"
-							class="nav-cart-quantity-bubble hidden"
-						>
+						<div id="nav-cart-bubble" class="nav-cart-quantity-bubble hidden">
 							<span id="nav-cart-quantity">-</span>
 						</div>
 					</li>
@@ -127,72 +82,28 @@
 				<img src="./src/assets/imgs/banner_landing.webp" />
 			</section>
 
-			<section class="content">
-				<div class="cart-layout">
-					<div class="cart-list">
-						<div class="toolbar">
-							<h1>Carrito de compras</h1>
-						</div>
+			<section class="content about-container">
+				<h1>Sobre Nosotros</h1>
+				<p>
+					<strong>HardTech</strong> nació en 2020 con la misión de hacer que la tecnología
+					sea accesible para todos los argentinos. Desde nuestros inicios, trabajamos
+					para ofrecer los mejores precios en hardware, periféricos y componentes,
+					con un servicio de atención cercano y transparente.
+				</p>
 
-						<table
-							class="cart-table"
-							id="cart-items-container"
-						>
-							<thead>
-								<tr>
-									<th>Nombre</th>
-									<th>Precio unitario</th>
-									<th>Cantidad</th>
-									<th>Total</th>
-									<th></th>
-								</tr>
-							</thead>
-							<tbody id="cart-items"></tbody>
-						</table>
+				<h2>Nuestra Misión</h2>
+				<p>
+					Brindar productos tecnológicos de calidad, con soporte real y envíos a todo
+					el país. Queremos que cada compra sea simple, rápida y confiable.
+				</p>
 
-						<div
-							id="cart-cards-container"
-							class="cart-cards hidden"
-						></div>
-
-						<div id="no-items-cart-message">
-							<h3>El carrito esta vació</h3>
-							<a href="./index.html"
-								><button class="clickable primary-button">
-									Ver productos
-								</button></a
-							>
-						</div>
-					</div>
-
-					<aside
-						id="cart-summary"
-						class="cart-summary-card"
-					>
-						<h3>Resumen del carrito</h3>
-
-						<div class="summary-row">
-							<span>Precio total</span>
-							<strong id="summary-total">$0</strong>
-						</div>
-
-						<div class="summary-row">
-							<span>Dinero ahorrado</span>
-							<strong id="summary-savings">$0</strong>
-						</div>
-
-						<p class="summary-note">
-							* Impuestos nacionales y provinciales incluidos.
-						</p>
-
-						<button
-							id="checkout-btn"
-							class="primary-button clickable"
-						>
-							Finalizar compra
-						</button>
-					</aside>
-				</div>
+				<h2>Nuestros Valores</h2>
+				<ul>
+					<li>✅ Atención personalizada</li>
+					<li>✅ Transparencia y confianza</li>
+					<li>✅ Pasión por la tecnología</li>
+					<li>✅ Compromiso con el cliente</li>
+				</ul>
 			</section>
 		</main>
 
@@ -201,28 +112,14 @@
 			<p>Av. Siempre Viva 742, Buenos Aires, Argentina</p>
 			<p>
 				📞
-				<a
-					type="phone"
-					href="tel:+541155555555"
-					>+54 11 5555-5555</a
-				>
+				<a type="phone" href="tel:+541155555555">+54 11 5555-5555</a>
 				| 📧
-				<a
-					type="email"
-					href="mailto:contacto@hardtech.com"
-					>contacto@hardtech.com</a
-				>
+				<a type="email" href="mailto:contacto@hardtech.com">contacto@hardtech.com</a>
 			</p>
 			<p>Lunes a Viernes de <b>9:00</b> a <b>18:00</b> hs</p>
 		</footer>
 
-		<script
-			type="module"
-			src="./src/js/cart.js"
-		></script>
-		<script
-			type="module"
-			src="./src/js/menu.js"
-		></script>
+		<script type="module" src="./src/js/cart.js"></script>
+		<script type="module" src="./src/js/menu.js"></script>
 	</body>
 </html>
