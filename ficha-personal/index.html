@@ -1,113 +1,58 @@
 <!DOCTYPE html>
-<html
-	lang="es"
-	data-theme="dark"
->
-	<head>
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
-		<meta
-			name="description"
-			content="Ficha Personal de Nicolas Peñaloza"
-		/>
-		<title>Nicolas Peñaloza</title>
-		<link
-			rel="stylesheet"
-			href="./src/assets/styles/index.css"
-		/>
-	</head>
-	<body class="light-mode">
-		<nav class="navbar">
-			<h2>Ficha Personal</h2>
-			<button class="theme-toggle-btn">Claro / Oscuro</button>
-		</nav>
+<html lang="es" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ficha Personal de Nicolas Peñaloza" />
+    <title>Nicolas Peñaloza</title>
+    <link rel="stylesheet" href="./src/assets/styles/index.css" />
+  </head>
+  <body class="light-mode">
+    <nav class="navbar">
+      <h2>Ficha Personal</h2>
+      <button class="theme-toggle-btn">🌙</button>
+    </nav>
 
-		<header class="header container">
-			<div class="avatar">
-				<img
-					src="src/assets/images/profile_img.webp"
-					name="me"
-					alt="Foto personal de Nicolás"
-				/>
-			</div>
-			<h1 class="title">Nicolás Peñaloza</h1>
-		</header>
+    <header class="header">
+      <div class="avatar">
+        <img
+          src="src/assets/images/profile_img.webp"
+          name="me"
+          alt="Foto personal de Nicolás"
+        />
+      </div>
+      <h1 class="title">Nicolás Ariel Peñaloza</h1>
+    </header>
 
-		<section
-			id="me"
-			class="container"
-		>
-			<div class="info">
-				<label
-					>Nombre Completo:
-					<strong>Nicolás Ariel Peñaloza</strong></label
-				>
-				<label>Número de Legajo: <strong>1163655</strong></label>
-				<label
-					>Correo Electrónico:
-					<strong>npenaloza@uade.edu.ar</strong></label
-				>
-				<label
-					>Carrera:
-					<strong
-						>Ing. en
-						<span style="white-space: nowrap"
-							>Informática</span
-						></strong
-					></label
-				>
-				<label>Curso: <strong>536117</strong></label>
-				<label>Sede: <strong>Campus Buenos Aires</strong></label>
-			</div>
-		</section>
+    <main class="container">
+      <div class="info-group">
+        <article class="info-card">
+          <label class="info-label">Nombre Completo</label>
+          <p class="info-detail">Nicolás Ariel Peñaloza</p>
+        </article>
 
-		<section
-			id="projects"
-			class="container"
-		>
-			<h2 class="section-title">Proyectos</h2>
-			<ul class="project-list">
-				<li class="project-item">
-					<a
-						href="https://tusitio.github.io/fan-page"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Fan Page
-					</a>
-				</li>
-				<li class="project-item">
-					<a
-						href="https://tusitio.github.io/local-comercial"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Local Comercial
-					</a>
-				</li>
-				<li class="project-item">
-					<a
-						href="https://tusitio.github.io/centro-comercial"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Sitio grupal del Centro Comercial
-					</a>
-				</li>
-			</ul>
-			<p class="note">
-				* Los 3 enlaces abren en una nueva pestaña como requiere la
-				consigna.
-			</p>
-		</section>
+        <article class="info-card">
+          <label class="info-label">Nro de Legajo</label>
+          <p class="info-detail">1163655</p>
+        </article>
+      </div>
+      <div class="info-group">
+        <article class="info-card">
+          <label class="info-label">Materia</label>
+          <p class="info-detail">Diseño y desarrollo Web</p>
+        </article>
 
-		<footer class="footer">
-			<p class="footer-text">Nicolás Ariel Peñaloza | 2C - 2025</p>
-		</footer>
+        <article class="info-card">
+          <label class="info-label">Curso</label>
+          <p class="info-detail">536117</p>
+        </article>
+      </div>
+    </main>
 
-		<script src="./src/scripts/index.js"></script>
-	</body>
+    <footer class="footer">
+      <p class="footer-text">© Todos los derechos reservados</p>
+    </footer>
+
+    <script src="./src/scripts/index.js"></script>
+  </body>
 </html>
